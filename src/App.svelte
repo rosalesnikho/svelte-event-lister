@@ -1,8 +1,9 @@
 <script>
 
     import Header from './UI/Header.svelte'
-    import MeetupGridList from './Meetups/MeetupGridList.svelte'
     import StandardModal from './UI/StandardModal.svelte'
+    import MeetupGridList from './Meetups/MeetupGridList.svelte'
+    import MeetupForm from './Meetups/MeetupForm.svelte'
 
     export let title;
     export let subtitle;
@@ -53,6 +54,7 @@
 
 <Header on:activate-modal />
 <MeetupGridList events="{events}" />
-<StandardModal on:close-modal />
-
+<StandardModal on:close-modal>
+    <MeetupForm />
+</StandardModal>
 

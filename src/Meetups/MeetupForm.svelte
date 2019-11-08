@@ -97,10 +97,7 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button on:click|preventDefault class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                        <button class="button is-link is-light is-danger">Cancel</button>
+                        <button on:submit|preventDefault class="button is-link">Submit</button>
                     </div>
                 </div>
             </form>
