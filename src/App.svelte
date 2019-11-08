@@ -13,7 +13,7 @@
 
     const activateModal = () => {
         const modal = document.getElementById('form-modal');
-        modal.style.display = 'block'
+        modal.classList.add('is-active')
     };
 
     export let events = [
@@ -54,8 +54,9 @@
     ];
 </script>
 
-<Header on:click={activateModal}/>
+<Header on:click={activateModal} />
+
 <MeetupGridList events="{events}" />
-<StandardModal />
+<StandardModal on:close-modal />
 
 
