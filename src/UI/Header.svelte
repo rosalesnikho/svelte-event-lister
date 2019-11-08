@@ -1,3 +1,16 @@
+<script>
+    import {createEventDispatcher} from 'svelte'
+
+    const dispatcher = createEventDispatcher();
+
+    const activateModal = () => {
+        const modal = document.getElementById('form-modal');
+        dispatcher('activate-modal', modal.classList.add('is-active'))
+    };
+
+
+</script>
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -16,7 +29,7 @@
             <a class="navbar-item">Home</a>
             <a class="navbar-item">Events</a>
             <div class="buttons">
-                <a on:click class="button is-primary"><strong>Create Event</strong></a>
+                <a on:click={activateModal} class="button is-primary"><strong>Create Event</strong></a>
             </div>
         </div>
 

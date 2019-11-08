@@ -11,10 +11,7 @@
     export let meetupImg;
     export let address;
 
-    const activateModal = () => {
-        const modal = document.getElementById('form-modal');
-        modal.classList.add('is-active')
-    };
+
 
     export let events = [
         {
@@ -54,8 +51,7 @@
     ];
 </script>
 
-<Header on:click={activateModal} />
-
+<Header on:activate-modal />
 <MeetupGridList events="{events}" />
 <StandardModal on:close-modal />
 
