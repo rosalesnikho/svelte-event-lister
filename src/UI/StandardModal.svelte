@@ -6,7 +6,6 @@
     const closeModal = () => {
         const closeModalBtn = document.getElementById('form-modal');
         dispatcher('close-modal', closeModalBtn.classList.remove('is-active'))
-        )
     }
 </script>
 
