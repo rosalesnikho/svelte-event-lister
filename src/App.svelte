@@ -5,12 +5,12 @@
     import MeetupGridList from './Meetups/MeetupGridList.svelte'
     import MeetupForm from './Meetups/MeetupForm.svelte'
 
-    export let title;
-    export let subtitle;
-    export let description;
-    export let contactEmail;
-    export let meetupImg;
-    export let address;
+    export let title = "";
+    export let subtitle = "";
+    export let description = "";
+    export let contactEmail = "";
+    export let meetupImg = "";
+    export let address = "";
 
 
 

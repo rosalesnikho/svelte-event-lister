@@ -1,11 +1,11 @@
 <!-- JS -->
 <script>
-    export let title;
-    export let subtitle;
-    export let description;
-    export let contactEmail;
-    export let meetupImg;
-    export let address;
+    export let title = "";
+    export let subtitle = "";
+    export let description = "";
+    export let contactEmail = "";
+    export let meetupImg = "";
+    export let address = "";
 
 </script>
 
