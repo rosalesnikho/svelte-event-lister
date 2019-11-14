@@ -14,7 +14,7 @@
     <section class="meetup-list">
         <div class="columns is-mobile">
             {#each events as event, index(event.id)}
-                <div class="column is-4">
+            <div class="column is-3">
                     <MeetupItem
                             title="{event.title}"
                             subtitle="{event.subtitle}"
